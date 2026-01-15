@@ -381,10 +381,6 @@ Includes the locality, postal code, and other components of a physical or postal
   "dateCreated": "2025-10-14T11:00:00Z",
   "dateModified": "2025-10-20T12:00:00Z",
   "description": "Consumption Point in a residential building",
-  "location": {
-    "type": "Point",
-    "coordinates": [2.195, 41.514]
-  },
   "@context": [
     "https://smartdatamodels.github.io/dataModel.Consumption/context.jsonld"
   ]
