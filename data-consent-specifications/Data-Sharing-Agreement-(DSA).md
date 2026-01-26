@@ -34,7 +34,7 @@ https://w3c.github.io/dpv/2.1/standards/p7012/#vocab-status
 
 # linkedDSA
 
-**Description:** A unique identifier for the next DSA in case of consent revocation.
+**Description:** A unique identifier for the previous DSA in case of consent revocation.
 
 | @type         | Expected Type        | Example value(s)     |
 | ------------- | -------------        | -------------        |
