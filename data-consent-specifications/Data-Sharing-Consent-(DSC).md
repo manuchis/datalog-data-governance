@@ -21,7 +21,15 @@ https://w3c.github.io/dpv/2.1/standards/p7012/#vocab-agreement
 | https://schema.org/Thing  |   Text             | DataSharingConsent  |
 
 # id
-**Description:** A unique identifier.
+**Description:** A unique identifier for the DSC.
+
+| @type         | Expected Type        | Example value(s)     |
+| ------------- | -------------        | -------------        |
+| https://dictionary.mydata.org/prodserv/#uid   | String       | b728d03e-c983-4322-8a46-2bf126b403de                 |
+
+
+# linkedDSC
+**Description:** A unique identifier for the previous DSC (if any).
 
 | @type         | Expected Type        | Example value(s)     |
 | ------------- | -------------        | -------------        |
