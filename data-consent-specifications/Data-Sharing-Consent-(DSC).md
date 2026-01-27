@@ -212,7 +212,7 @@ Contains the following attributes:
 | ------------- | -------------        | -------------        |
 | https://schema.org/Text| String |  `"Agriculture"`, `"Climate"`, `"Mobility"`, `"EnergyWaste"`, `"Health"`, `"Demographics"`|
 
-## 3Party 
+## 3PartyType 
 
 **Description:** Specifies the types of third parties that are allowed to receive the data under this consent. **Optional**, in case of Broad Consent.
 
