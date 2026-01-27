@@ -160,7 +160,6 @@ Contains the following attributes:
 | ------------- | -------------        | -------------        |
 | https://w3c.github.io/dpv/2.2/dpv/#Purpose   | String | `"Comercial"`, `"Marketing"`, `"Internal"`, `"Public Interest"`, `"Research"` |
 
-
 ## allowedDuration
 
 **Description:** Defines how long the consent remains valid or the data can be used.
@@ -180,9 +179,6 @@ Contains the following attributes:
 
 -----
 
-# Dynamic consent variables
-
-
 ## dynamicConsentOptIn
 
 **Description:** Specifies the default decision if the donor does not respond to a dynamic consent request within the defined timeframe.
@@ -201,8 +197,6 @@ Contains the following attributes:
 | https://w3c.github.io/dpv/2.2/dpv/#Duration   | String ([ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601)) | `"P7D"`, `"P30D"` or `"Undefined"`|
 
 -----
-
-# Broad consent variables
 
 ## field
 
