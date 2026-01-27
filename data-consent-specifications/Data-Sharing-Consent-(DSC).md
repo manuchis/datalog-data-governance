@@ -370,16 +370,18 @@ Contains the following attributes:
     "broadConsentNotSpecified": "ContactUser",
 
     "dynamicConsentOptIn": "RejectByDefault",
-    "dynamicConsentTimeOut": "P7D"
-  },
+    "dynamicConsentTimeOut": "P7D",
 
   "field": "Research",
-  "3Party": ["Research", "Non-profit"],
+  "3PartyType": ["Research", "Non-profit"],
   "retentionPeriod": "P24M",
   "useAI": "Analytics",
   "useLicense": "Credit",
   "storageLocation": "EEA",
   "notification": "Always",
+  },
+
+
 
   "Signature": {
     "proof": "z6MkiTBz1ymuepAQ4HEHYSF1H8quG5GLVVQR3djdX3mDooWp",
