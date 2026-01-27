@@ -191,6 +191,15 @@ In addition, the list of datasets with the following information:
 | ------------- | -------------        | -------------        |
 | https://schema.org/DateTime   | DateTime | 2025-10-15T14:23:00Z |
 
+## valid
+
+**Description:** The exact timestamp of when the agreement was signed.
+
+| @type         | Expected Type        | Example value(s)     |
+| ------------- | -------------        | -------------        |
+| https://schema.org/Boolean   | Boolean | True or False |
+
+
 # timestamp
 
 **Description:** The exact timestamp of when the document is created.
