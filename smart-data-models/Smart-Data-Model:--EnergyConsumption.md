@@ -56,9 +56,9 @@ This document defines an extended set of descriptive and contextual attributes f
 | https://schema.org/Text| String|"0522"|  
 
 # timeInterval{}
-
-## startTimestamp 
 **Description**: Object that defines the billing period. Contains the attributes startTimestamp and endTimestamp.
+## startTimestamp 
+**Description**: Start timestamp of the measurements.
 
 | @type         | Expected Type        | Example value(s)     |
 | ------------- | -------------        | -------------        |
@@ -66,7 +66,7 @@ This document defines an extended set of descriptive and contextual attributes f
 
 ## endTimestamp
 
-**Description**: Year corresponding to the consumption record.
+**Description**: End timestamp of the measurements.
 
 | @type         | Expected Type        | Example value(s)     |
 | ------------- | -------------        | -------------        |
@@ -141,22 +141,6 @@ This document defines an extended set of descriptive and contextual attributes f
 | ------------- | -------------        | -------------        |
 | https://dictionary.mydata.org/prodserv/#uid   | String       | b728d03e-c983-4322-8a46-2bf126b403de  |     
 
-# month
-
-**Description**: Numeric month corresponding to the consumption period.
-
-| @type         | Expected Type        | Example value(s)     |
-| ------------- | -------------        | -------------        |
-| https://schema.org/Number   | String       | 2 |     
-
-# year
-
-**Description**: Year corresponding to the consumption record.
-
-| @type         | Expected Type        | Example value(s)     |
-| ------------- | -------------        | -------------        |
-| https://schema.org/Number   | String       | 2 |     
-
 # dateCreated
 
 **Description**: Timestamp when the entity was created in the system.
@@ -198,14 +182,6 @@ For example, if water consumption is measured every 15 minutes, the array will c
 ## consumption
 
 **Description**: Object containing the value and unit of measured consumption data for a specific resource type.
-
-### tariffCode
-
-**Description**: Code that identifies the access-tariff (peaje) applicable to the supply point, used for billing and regulatory purposes. Based on: https://tramitesanonimos.cnmc.gob.es/tabla/17_TARIFA_ATR.
-
-| @type         | Expected Type        | Example value(s)     |
-| ------------- | -------------        | -------------        |
-| https://schema.org/Text | String | "004" | 
 
 ### value 
 
@@ -255,8 +231,6 @@ For example, if water consumption is measured every 15 minutes, the array will c
   "supplyType": "electricity",
   "supplier": "Endesa Energía S.A.",
   "consumptionPoint": "g109d03e-c983-4322-8a46-2bf126b403de",
-  "month": 9,
-  "year": 2025,
   "dateCreated": "2025-10-14T11:00:00Z",
   "dateModified": "2025-10-20T12:00:00Z",
   "description": "Electricity consumption record for September 2025",
