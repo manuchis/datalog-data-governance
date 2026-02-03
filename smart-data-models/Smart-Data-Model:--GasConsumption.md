@@ -147,14 +147,6 @@ For example, if water consumption is measured every 15 minutes, the array will c
 
 **Description**: Object containing the value and unit of measured consumption data for a specific resource type.
 
-### tariffCode
-
-**Description**: Code identifying the applicable gas access tariff for the supply point. Based on: https://tramitesanonimos.cnmc.gob.es/tabla/GAS_TIPO_PEAJE.
-
-| @type         | Expected Type        | Example value(s)     |
-| ------------- | -------------        | -------------        |
-| https://schema.org/Text| String|"11"|  
-
 ### value 
 
 **Description**: Numerical value representing the amount of resource consumed during the measurement interval.
