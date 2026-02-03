@@ -56,9 +56,10 @@ This document defines an extended set of descriptive and contextual attributes f
 | https://schema.org/Text| String|"0522"|  
 
 # timeInterval{}
+**Description**: Object that defines the billing period. Contains the attributes startTimestamp and endTimestamp.
 
 ## startTimestamp 
-**Description**: Object that defines the billing period. Contains the attributes startTimestamp and endTimestamp.
+**Description**: Start timestamp of the consumptions.
 
 | @type         | Expected Type        | Example value(s)     |
 | ------------- | -------------        | -------------        |
@@ -66,7 +67,7 @@ This document defines an extended set of descriptive and contextual attributes f
 
 ## endTimestamp
 
-**Description**: Year corresponding to the consumption record.
+**Description**: Start timestamp of the consumptions.
 
 | @type         | Expected Type        | Example value(s)     |
 | ------------- | -------------        | -------------        |
@@ -196,8 +197,6 @@ For example, if water consumption is measured every 15 minutes, the array will c
   "dataProvider": "Ajuntament de Barcelona",
   "supplier": "Aigües de Barcelona",
   "consumptionPoint": "g109d03e-c983-4322-8a46-2bf126b403de",
-  "month": 9,
-  "year": 2025,
   "dateCreated": "2025-10-14T11:00:00Z",
   "dateModified": "2025-10-20T12:00:00Z",
   "description": "Water consumption record for September 2025",
