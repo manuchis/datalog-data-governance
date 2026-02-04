@@ -28,12 +28,6 @@ https://w3c.github.io/dpv/2.1/standards/p7012/#vocab-agreement
 | https://dictionary.mydata.org/prodserv/#uid   | String       | b728d03e-c983-4322-8a46-2bf126b403de                 |
 
 
-# previousVersion
-**Description:** A unique identifier for the previous DSC (if any).
-
-| @type         | Expected Type        | Example value(s)     |
-| ------------- | -------------        | -------------        |
-| https://dictionary.mydata.org/prodserv/#uid   | String       | b728d03e-c983-4322-8a46-2bf126b403de                 |
 
 -----
 
@@ -312,9 +306,24 @@ Contains the following attributes:
 | ------------- | -------------        | -------------        |
 | https://schema.org/DateTime   | DateTime | 2025-10-15T14:23:00Z |
 
-# consentTimestamp
+# previousVersion
+**Description:** A unique identifier for the previous DSC (if any).
 
-**Description:** The exact timestamp of when the consent is granted.
+| @type         | Expected Type        | Example value(s)     |
+| ------------- | -------------        | -------------        |
+| https://dictionary.mydata.org/prodserv/#uid   | String       | b728d03e-c983-4322-8a46-2bf126b403de                 |
+
+# nextVersion
+**Description:** A unique identifier for the next DSC (if any).
+
+| @type         | Expected Type        | Example value(s)     |
+| ------------- | -------------        | -------------        |
+| https://dictionary.mydata.org/prodserv/#uid   | String       | b728d03e-c983-4322-8a46-2bf126b403de                 |
+
+
+# DeprecatedOn
+
+**Description:** The timestamp when is deprecated. if valid, null. 
 | @type         | Expected Type        | Example value(s)     |
 | ------------- | -------------        | -------------        |
 | https://schema.org/DateTime   | DateTime | 2025-10-15T14:23:00Z |
@@ -383,7 +392,9 @@ Contains the following attributes:
     "valid": True
   },
   "previousVersion": "b728d03e-c983-4322-8a46-2bf126b403de",
-  "consentTimestamp": "2025-10-15T14:23:00Z",
+ "nextVersion": "b728d03e-c983-4322-8a46-2bf126b403de",
+"deprecatedOn" "2025-10-15T14:23:00Z",
+ "consentTimestamp": "2025-10-15T14:23:00Z",
   "createdAt": "2025-10-15T14:23:00Z",
   "updatedAt": "2025-10-15T14:23:00Z",
 }
