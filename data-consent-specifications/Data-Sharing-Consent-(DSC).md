@@ -28,7 +28,7 @@ https://w3c.github.io/dpv/2.1/standards/p7012/#vocab-agreement
 | https://dictionary.mydata.org/prodserv/#uid   | String       | b728d03e-c983-4322-8a46-2bf126b403de                 |
 
 
-# linkedDSC
+# previousVersion
 **Description:** A unique identifier for the previous DSC (if any).
 
 | @type         | Expected Type        | Example value(s)     |
@@ -382,7 +382,7 @@ Contains the following attributes:
     "timestamp": "2025-10-15T14:23:00Z",
     "valid": True
   },
-
+  "previousVersion": "b728d03e-c983-4322-8a46-2bf126b403de",
   "consentTimestamp": "2025-10-15T14:23:00Z",
   "createdAt": "2025-10-15T14:23:00Z",
   "updatedAt": "2025-10-15T14:23:00Z",
