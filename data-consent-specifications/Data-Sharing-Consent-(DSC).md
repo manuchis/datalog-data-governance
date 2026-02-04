@@ -1,3 +1,4 @@
+
 This document writes down the rules for which the Data Intermediary is mandated to share donor's data to third parties. 
 We differentiate broad and dynamic consent modes in our protocol. General policies are defined by broad consent, while dynamic consent is on-demand based consent. 
 
@@ -394,7 +395,6 @@ Contains the following attributes:
   "previousVersion": "b728d03e-c983-4322-8a46-2bf126b403de",
  "nextVersion": "b728d03e-c983-4322-8a46-2bf126b403de",
 "deprecatedOn" "2025-10-15T14:23:00Z",
- "consentTimestamp": "2025-10-15T14:23:00Z",
   "createdAt": "2025-10-15T14:23:00Z",
   "updatedAt": "2025-10-15T14:23:00Z",
 }
