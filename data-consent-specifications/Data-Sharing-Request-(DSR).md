@@ -182,7 +182,8 @@ It is also linked to a description of the project or campaign submitted by the d
   "retentionPeriod": "P24M",
   "storageLocation": "EEA",
 
-  "timestamp": "2025-10-15T10:00:00Z"
+  "createdAt": "2025-10-15T10:00:00Z"
+  "updatedAt": "2025-10-15T10:00:00Z"
 }
 
 ```
