@@ -125,12 +125,6 @@ It is also linked to a description of the project or campaign submitted by the d
 | ------------- | -------------        | -------------        |
 | https://w3c.github.io/dpv/2.2/dpv/#StorageLocation  | String | `"EEA"`, `"Worldwide"`|
 
-## timestamp
-
-**Description:** The exact timestamp of when the request is submitted.
-| @type         | Expected Type        | Example value(s)     |
-| ------------- | -------------        | -------------        |
-| https://schema.org/DateTime   | DateTime | 2025-10-15T14:23:00Z |
 
 # createdAt
 
@@ -145,6 +139,13 @@ It is also linked to a description of the project or campaign submitted by the d
 | @type         | Expected Type        | Example value(s)     |
 | ------------- | -------------        | -------------        |
 | https://schema.org/DateTime   | DateTime | 2025-10-15T14:23:00Z |
+
+# dsaId
+
+**Description:** Links the DSA generated from this DSR when is created, otherwise is empty.
+| @type         | Expected Type        | Example value(s)     |
+| ------------- | -------------        | -------------        |
+| https://dictionary.mydata.org/prodserv/#uid   | String       | b728d03e-c983-4322-8a46-2bf126b403de   |
 
 # Example
 **Description:** Example encoded as [JSON-LD](https://en.wikipedia.org/wiki/JSON-LD) in a HTML script tag.
@@ -182,8 +183,9 @@ It is also linked to a description of the project or campaign submitted by the d
   "retentionPeriod": "P24M",
   "storageLocation": "EEA",
 
-  "createdAt": "2025-10-15T10:00:00Z"
-  "updatedAt": "2025-10-15T10:00:00Z"
+  "createdAt": "2025-10-15T10:00:00Z",
+  "updatedAt": "2025-10-15T10:00:00Z",
+  "dsaID": "a1b5e44d-02c1-42cf-b1a7-fc7b1b93b912"
 }
 
 ```
