@@ -157,7 +157,9 @@ It is also linked to a description of the project or campaign submitted by the d
   
   "userId": "d8b2c03e-54a6-4a29-9d45-7f6e128c30f1",
   "projectId": "a1b5e44d-02c1-42cf-b1a7-fc7b1b93b912",
-
+  datasets[
+  ...
+  ],
   "field": [
     "Health",
     "Mobility"
