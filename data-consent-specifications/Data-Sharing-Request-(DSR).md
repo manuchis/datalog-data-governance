@@ -169,7 +169,7 @@ It is also linked to a description of the project or campaign submitted by the d
     "Research",
     "PublicInterest"
   ],
-  
+   "lawfulBasis": "consent",
   "useAI": "Analytics",
   "useLicense": "Credit",
   
