@@ -11,8 +11,8 @@ For the data standards:
 - https://sede.cnmc.gob.es/documentacion/home
 - https://smartdatamodels.org//
 
--
 
+----
 License: MIT License
 Copyright (c) 2025 Datalog
 
