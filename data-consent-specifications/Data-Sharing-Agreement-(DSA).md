@@ -32,14 +32,6 @@ https://w3c.github.io/dpv/2.1/standards/p7012/#vocab-status
 | ------------- | -------------        | -------------        |
 | https://dictionary.mydata.org/prodserv/#uid   | String       | b728d03e-c983-4322-8a46-2bf126b403de                 |
 
-# linkedDSA
-
-**Description:** A unique identifier for the previous DSA in case of consent revocation.
-
-| @type         | Expected Type        | Example value(s)     |
-| ------------- | -------------        | -------------        |
-| https://dictionary.mydata.org/prodserv/#uid   | String       | b728d03e-c983-4322-8a46-2bf126b403de                 |
-
 
 # controllerId
 **Description:** A unique identifier for the entity that acts as an intermediary of the agreement.
@@ -56,6 +48,16 @@ https://w3c.github.io/dpv/2.1/standards/p7012/#vocab-status
 | @type         | Expected Type        | Example value(s)     |
 | ------------- | -------------        | -------------        |
 | https://dictionary.mydata.org/prodserv/#uid   | String       | b728d03e-c983-4322-8a46-2bf126b403de                 |
+
+
+# linkedDSA
+
+**Description:** A unique identifier for the previous DSA in case of consent revocation.
+
+| @type         | Expected Type        | Example value(s)     |
+| ------------- | -------------        | -------------        |
+| https://dictionary.mydata.org/prodserv/#uid   | String       | b728d03e-c983-4322-8a46-2bf126b403de                 |
+
 
 # datasets
 
@@ -96,7 +98,7 @@ In addition, the list of datasets with the following information:
 
 ## events[]
 
-**Description:** It is a list of objects that describes each status and its timestamp of the negotiation process. The statuses follow the [IEEE P7012 vocabulary](https://w3c.github.io/dpv/2.1/standards/p7012/#vocab-status).
+**Description:** It is a list of objects that describes each status and its timestamp of the negotiation process **for each of the datasets**. The statuses follow the [IEEE P7012 vocabulary](https://w3c.github.io/dpv/2.1/standards/p7012/#vocab-status).
 
 
 ### userId
@@ -115,7 +117,7 @@ In addition, the list of datasets with the following information:
 | https://dictionary.mydata.org/prodserv/#uid | String |  b728d03e-c983-4322-8a46-2bf126b403de|
 
 ### status
-**Description:** The status of the agreement corresponding to the event. 
+**Description:** The status of the agreement corresponding to the event. Additional statuses can be created, such as "UserNotified", "TimeOut", etc.
 
 - https://w3c.github.io/dpv/2.1/standards/p7012/#AgreementNegotiationRequested
 - https://w3c.github.io/dpv/2.1/standards/p7012/#AgreementRefused
@@ -136,7 +138,7 @@ In addition, the list of datasets with the following information:
 ----
 # events[]
 
-**Description:** It is a list of objects (events) that describes each status and its timestamp of the negotiation process. The statuses follow the [IEEE P7012 vocabulary](https://w3c.github.io/dpv/2.1/standards/p7012/#vocab-status). Each object has 3 attributes: userId, eventId and status.
+**Description:** It is a list of objects (events) that describes events in the general document and its timestamp of the negotiation process. The statuses follow the [IEEE P7012 vocabulary](https://w3c.github.io/dpv/2.1/standards/p7012/#vocab-status). Each object has 3 attributes: userId, eventId and status.
 
 
 ## userId
@@ -220,13 +222,22 @@ In addition, the list of datasets with the following information:
   "userId": "a1111111-b222-cccc-dddd-eeeeeeeeeeee",
   "controllerId": "b2222222-c333-dddd-eeee-ffffffffffff",
   "requestId": "c3333333-d444-eeee-ffff-111111111111",
-
+  "linkedDSA":"d534073333-d444-eeee-ffff-111111111111",
   "datasets": [
     {
       "datasetId": "d4444444-e555-ffff-1111-222222222222",
       "DSCId": "b728d03e-c983-4322-8a46-2bf126b403de",
       "ownerId": "a1111111-b222-cccc-dddd-eeeeeeeeeeee",
-      "retentionPeriod": "P12M"
+      "retentionPeriod": "P12M",
+      "events": [
+         {
+        "userId": "a1111111-b222-cccc-dddd-eeeeeeeeeeee",
+        "eventId": "e5555555-f666-1111-2222-333333333333",
+        "status": "AgreementNegotiationRequested",
+        "timestamp": "2025-10-14T10:00:00Z"
+        },
+        {...}
+      ]
     }
   ],
 
@@ -237,12 +248,7 @@ In addition, the list of datasets with the following information:
       "status": "AgreementNegotiationRequested",
       "timestamp": "2025-10-14T10:00:00Z"
     },
-    {
-      "userId": "b2222222-c333-dddd-eeee-ffffffffffff",
-      "eventId": "f6666666-1111-2222-3333-444444444444",
-      "status": "AgreementAccepted",
-      "timestamp": "2025-10-14T11:00:00Z"
-    }
+    {...}
   ],
 
   "Signature": {
