@@ -172,7 +172,24 @@ Contains the following attributes:
 | ------------- | -------------        | -------------        |
 | https://schema.org/Boolean   | Boolean | `True` or `False` |
 
+## broadConsentOptOut
+
+**Description:** Indicates whether the donor wants to be informed each time an opt-out option is available. **Optional**, in case of Broad Consent. By default, 'False',
+
+| @type         | Expected Type        | Example value(s)     |
+| ------------- | -------------        | -------------        |
+| https://schema.org/Boolean   | Boolean | `True` or `False`|
+
+## broadConsentNotSpecified
+
+**Description:** Defines what should happen if a scenario is not covered by the donor’s preferences (contact or act on behalf). **Optional**, in case of Broad Consent.
+
+| @type         | Expected Type        | Example value(s)     |
+| ------------- | -------------        | -------------        |
+| https://schema.org/Text| String | `"ContactUser"`, `"ActAsRepresentative", "RejectByDefault"` or `"AcceptByDefault"`|
+
 -----
+
 
 ## dynamicConsentOptIn
 
@@ -251,21 +268,7 @@ Contains the following attributes:
 | ------------- | -------------        | -------------        |
 | https://schema.org/Text](https://schema.org/Text  | String | `"Always"`, `"Critical"`, `"None"`|
 
-## broadConsentOptOut
 
-**Description:** Indicates whether the donor wants to be informed each time an opt-out option is available. **Optional**, in case of Broad Consent.
-
-| @type         | Expected Type        | Example value(s)     |
-| ------------- | -------------        | -------------        |
-| https://schema.org/Boolean   | Boolean | `True` or `False`|
-
-## broadConsentNotSpecified
-
-**Description:** Defines what should happen if a scenario is not covered by the donor’s preferences (contact or act on behalf). **Optional**, in case of Broad Consent.
-
-| @type         | Expected Type        | Example value(s)     |
-| ------------- | -------------        | -------------        |
-| https://schema.org/Text| String | `"ContactUser"` or `"ActAsRepresentative"`|
 
 # Signature{}
 
@@ -293,19 +296,6 @@ Contains the following attributes:
 | ------------- | -------------        | -------------        |
 | https://schema.org/Boolean | Boolean | `True` or `False`|
 
-# createdAt
-
-**Description:** The exact timestamp of when the document is created.
-| @type         | Expected Type        | Example value(s)     |
-| ------------- | -------------        | -------------        |
-| https://schema.org/DateTime   | DateTime | 2025-10-15T14:23:00Z |
-
-# updatedAt
-
-**Description:** The exact timestamp of the last update of the document.
-| @type         | Expected Type        | Example value(s)     |
-| ------------- | -------------        | -------------        |
-| https://schema.org/DateTime   | DateTime | 2025-10-15T14:23:00Z |
 
 # previousVersion
 **Description:** A unique identifier for the previous DSC (if any).
@@ -325,6 +315,20 @@ Contains the following attributes:
 # DeprecatedOn
 
 **Description:** The timestamp when is deprecated. if valid, null. 
+| @type         | Expected Type        | Example value(s)     |
+| ------------- | -------------        | -------------        |
+| https://schema.org/DateTime   | DateTime | 2025-10-15T14:23:00Z |
+
+# createdAt
+
+**Description:** The exact timestamp of when the document is created.
+| @type         | Expected Type        | Example value(s)     |
+| ------------- | -------------        | -------------        |
+| https://schema.org/DateTime   | DateTime | 2025-10-15T14:23:00Z |
+
+# updatedAt
+
+**Description:** The exact timestamp of the last update of the document.
 | @type         | Expected Type        | Example value(s)     |
 | ------------- | -------------        | -------------        |
 | https://schema.org/DateTime   | DateTime | 2025-10-15T14:23:00Z |
