@@ -50,7 +50,7 @@ https://w3c.github.io/dpv/2.1/standards/p7012/#vocab-status
 | https://dictionary.mydata.org/prodserv/#uid   | String       | b728d03e-c983-4322-8a46-2bf126b403de                 |
 
 
-# linkedDSA
+# previousDSA
 
 **Description:** A unique identifier for the previous DSA in case of consent revocation.
 
