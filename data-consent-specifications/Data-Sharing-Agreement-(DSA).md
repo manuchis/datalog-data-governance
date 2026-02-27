@@ -222,7 +222,7 @@ In addition, the list of datasets with the following information:
   "userId": "a1111111-b222-cccc-dddd-eeeeeeeeeeee",
   "controllerId": "b2222222-c333-dddd-eeee-ffffffffffff",
   "requestId": "c3333333-d444-eeee-ffff-111111111111",
-  "linkedDSA":"d534073333-d444-eeee-ffff-111111111111",
+  "previousDSA":"d534073333-d444-eeee-ffff-111111111111",
   "datasets": [
     {
       "datasetId": "d4444444-e555-ffff-1111-222222222222",
