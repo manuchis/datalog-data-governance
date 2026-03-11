@@ -57,7 +57,7 @@ It is also linked to a description of the project or campaign submitted by the d
 
 | @type         | Expected Type        | Example value(s)     |
 | ------------- | -------------        | -------------        |
-| https://w3c.github.io/dpv/2.2/dpv/#Purpose   | String | `"Comercial"`, `"Marketing"`, `"Internal"`, `"Public Interest"`, `"Research"` |
+| https://w3c.github.io/dpv/2.2/dpv/#Purpose   | String | `"Commercial"`, `"Marketing"`, `"Internal"`, `"Public Interest"`, `"Research"` |
 
 # useAI
 
