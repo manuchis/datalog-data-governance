@@ -149,7 +149,7 @@ Contains the following attributes:
 
 ## allowedPurpose
 
-**Description:** Specifies the purposes for which data may be shared or used.
+**Description:** Specifies the purposes for which data may be shared or used. **Optional**, in case of Broad Consent.
 
 | @type         | Expected Type        | Example value(s)     |
 | ------------- | -------------        | -------------        |
@@ -157,7 +157,7 @@ Contains the following attributes:
 
 ## allowedDuration
 
-**Description:** Defines how long the consent remains valid or the data can be used.
+**Description:** Defines how long the consent remains valid or the data can be used. **Optional**, in case of Broad Consent.
 
 | @type         | Expected Type        | Example value(s)     |
 | ------------- | -------------        | -------------        |
