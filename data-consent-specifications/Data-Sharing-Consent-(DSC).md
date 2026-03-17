@@ -188,6 +188,8 @@ Contains the following attributes:
 | ------------- | -------------        | -------------        |
 | https://schema.org/Text| String | `"ContactUser"`, `"ActAsRepresentative", "RejectByDefault"` or `"AcceptByDefault"`|
 
+In the case of "ActAsRepresentative" it is expected that an additional step is taken. For example, a collective consent is possible, or wether the Intermediary makes the decision on behalf of the user unders specific conditions. However, this should be documented. In our implementation, this variable is not used yet. Nevertheless, "RejectByDefault"` or `"AcceptByDefault" are the automatic responses acting as a representative. 
+
 -----
 
 
