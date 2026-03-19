@@ -98,8 +98,20 @@ In addition, the list of datasets with the following information:
 
 ## events[]
 
-**Description:** It is a list of objects that describes each status and its timestamp of the negotiation process **for each of the datasets**. The statuses follow the [IEEE P7012 vocabulary](https://w3c.github.io/dpv/2.1/standards/p7012/#vocab-status).
+**Description:** It is a list of objects that describes each status and its timestamp of the negotiation process **for each of the datasets**.  Additional statuses can be created, such as "UserNotified", "TimeOut", etc.
 
+- https://w3c.github.io/dpv/2.1/standards/p7012/#AgreementNegotiationRequested
+- https://w3c.github.io/dpv/2.1/standards/p7012/#AgreementRefused
+- https://w3c.github.io/dpv/2.1/standards/p7012/#AgreementAccepted
+
+| @type         | Expected Type        | Example value(s)     |
+| ------------- | -------------        | -------------        |
+| https://w3c.github.io/dpv/2.1/standards/p7012/#AgreementNegotiationStatus | String | `AgreementNegotiationRequested`, `AgreementAccepted`, `AgreementRefused` `TimeOut`, `PendingCompletition` |
+
+- `AgreementNegotiationRequested`: When negotiation for a single dataset consent is pending to be completed.
+- `TimeOut`: Data user haven't answer the request for signature during a period of time. 
+- `AgreementAccepted`: After the data user accepts the agreement. 
+- `AgreementRefused`: After the data user rejects or revokes the agreement. 
 
 ### userId
 **Description:** Refers to the unique identifier of the user that performed the action described in the event.
@@ -117,7 +129,7 @@ In addition, the list of datasets with the following information:
 | https://dictionary.mydata.org/prodserv/#uid | String |  b728d03e-c983-4322-8a46-2bf126b403de|
 
 ### status
-**Description:** The status of the agreement corresponding to the event. Additional statuses can be created, such as "UserNotified", "TimeOut", etc.
+**Description:** The status of the agreement (DSA) corresponding to the event. Additional statuses can be created, such as "UserNotified", "TimeOut", etc.
 
 - https://w3c.github.io/dpv/2.1/standards/p7012/#AgreementNegotiationRequested
 - https://w3c.github.io/dpv/2.1/standards/p7012/#AgreementRefused
@@ -126,7 +138,14 @@ In addition, the list of datasets with the following information:
 
 | @type         | Expected Type        | Example value(s)     |
 | ------------- | -------------        | -------------        |
-| https://w3c.github.io/dpv/2.1/standards/p7012/#AgreementNegotiationStatus | String | `AgreementNegotiationRequested`, `AgreementAccepted`, `AgreementRefused` and `AgreementNegotiationTerminated`|
+| https://w3c.github.io/dpv/2.1/standards/p7012/#AgreementNegotiationStatus | String | `AgreementNegotiationRequested`, `AgreementAccepted`, `AgreementRefused`, `AgreementNegotiationTerminated`, `UserNotified`, `TimeOut`, `PendingCompletition` |
+
+- `AgreementNegotiationRequested`: When negotiation for each datasets consent is pending to be completed.
+- `AgreementNegotiationTerminated`: When the negotation for the datasets are completed and signature is pending.
+- `UserNotified`: Data user is notified for additional requests or issues (not the agreement signature).
+- `TimeOut`: Data user haven't answer the request for signature during a period of time. 
+- `AgreementAccepted`: After the data user accepts the agreement. 
+- `AgreementRefused`: After the data user rejects or revokes the agreement. 
 
 ### timestamp
 **Description:** The exact timestamp of the event.
