@@ -150,40 +150,50 @@ It is also linked to a description of the project or campaign submitted by the d
 
 ```
 {
-  "@context": "https://datalog.es/",
+  "@context": "https://schema.org/",
   "@type": "DataSharingRequest",
-  "@id": "f3d9c28b-7a64-41d1-93b0-35cfb5fdc88d",
-  
-  "userId": "d8b2c03e-54a6-4a29-9d45-7f6e128c30f1",
-  "projectId": "a1b5e44d-02c1-42cf-b1a7-fc7b1b93b912",
-  datasets[
-  ...
-  ],
-  "field": [
-    "Health",
-    "Mobility"
-  ],
-  
-  "purpose": [
-    "Research",
-    "PublicInterest"
+  "id": "7d92b7d4-8a6e-4d3e-bb5d-32fcf44d19a1",
+
+  "datasets": [
+    "1f63b72e-0c4f-43ea-97de-81fbd0d5b221",
+    "5be90f44-f1b7-4d29-a7d5-4dbe67a45f9f",
+    "c92e8a5f-26d1-4a08-b7e4-d39d2fa42f31"
   ],
 
-  "timeScope": {
-    "startDate": "2023-01-01T00:00:00Z",
-    "endDate": "2024-01-01T00:00:00Z"
+  "projectId": "3aa1f420-c1e0-48f2-90d7-0cb8f53d9211",
+  "project": {
+    "title": "Urban Energy Consumption Prediction for Climate Adaptation",
+    "description": "Research project focused on analyzing household energy consumption patterns in urban areas to improve public climate adaptation policies.",
+    "organization": "Barcelona Institute for Sustainable Systems",
+    "principalInvestigator": "Laura Martínez",
+    "expectedOutcomes": [
+      "Energy demand forecasting models",
+      "Public policy recommendations",
+      "Scientific publications"
+    ],
+    "website": "https://example.org/projects/urban-energy-ai"
   },
-  "lawfulBasis": "consent",
+  "requester": {
+    "organization": "Barcelona Institute for Sustainable Systems",
+    "organizationType": "Research",
+    "contactEmail": "research@example.org"
+  },
+  "field": "EnergyWaste",
+  "purpose": "Research",
   "useAI": "Analytics",
   "useLicense": "Credit",
-  "dpiaUrl": "https://example.com/dpia",
+  "dpiaUrl": "https://example.org/dpia/urban-energy-ai",
+  "lawfulBasis": "consent",
+  "timeScope": {
+    "startDate": "2024-01-01T00:00:00Z",
+    "endDate": "2024-12-31T23:59:59Z"
+  },
   "geographicalScope": "Spain",
   "retentionPeriod": "P24M",
   "storageLocation": "EEA",
-  "createdAt": "2025-10-15T10:00:00Z",
-  "updatedAt": "2025-10-15T10:00:00Z",
-  "dsaID": "a1b5e44d-02c1-42cf-b1a7-fc7b1b93b912"
+  "createdAt": "2026-05-12T10:14:00Z",
+  "updatedAt": "2026-05-12T10:14:00Z",
+  "dsaId": ""
 }
-
 ```
 
