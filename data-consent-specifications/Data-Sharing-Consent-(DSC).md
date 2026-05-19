@@ -41,7 +41,7 @@ https://w3c.github.io/dpv/2.1/standards/p7012/#vocab-agreement
 
 # SmartDataModel {}
 
-**Description:** Object containing the basic information of the Smart Data Model that the DAC is referred to.
+**Description:** Object containing the basic information of the Smart Data Model that the DSC is referred to.
 
 | @type         | Expected Type        | Example value(s)     |
 | ------------- | -------------        | -------------        |
